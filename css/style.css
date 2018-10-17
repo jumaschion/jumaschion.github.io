@@ -1,21 +1,38 @@
+
+/*GERAL*/
+
 *{
     font-family: 'EB Garamond', serif;
-    font-size: 20px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /*NAVBAR*/
 
 .nav {
     border-bottom: 1px solid black;
-    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .nav-primary.navbar{
     position: absolute;
-    top: 20px;
     width: 100%;
-    width: 100vw;  
-    z-index: 1;
+    z-index: 99;
+}
+
+@media (max-width: 480px) {
+    .nav-primary.navbar{
+    width: 50vw;
+    }
+}
+
+@media (min-width: 767px) and  (max-width: 979px){
+    .nav-primary.navbar{
+    width: 25vw;
+    }
 }
 
 .nav > li > a{
@@ -27,35 +44,78 @@
     color:white;
 }
 
+/*BACKGROUND*/
 .cover img {
     height: 100%;;
     height: 100vh;
-    object-fit: cover;
     width: 100%;
     width: 100vw;
+    object-fit: cover;
     object-position: top;
     opacity: 0.7;
 }
 
+/*ABOUT ME*/
+
+.aboutMeContainer {
+    height: 500px;
+}
+.subtitle {
+    font-size: 25px;
+}
+
+.quote {
+    font-size: 25px;
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 25px;
+    }
+    .subtitle {
+    font-size: 15px;
+    }
+
+    .quote {
+        font-size: 10px;
+    }
+}
+
+
+/*WORKS/PORTFOLIO*/
 
 .works{
-    background-color: black;
+    background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
 .img-work{
     filter: grayscale(100%);
 }
 
-.col-border{
-    border-top: 1px solid white;
-    padding: 15px;
-}
+/*FORM*/
 
-
-.form-group{
-    border: 0;
+.form-group > input{
     border-bottom: 1px solid #e9ecef;
 }
+
+span.error {
+    color: rgba(255, 0, 0, 0.774);
+    font-weight: bold;
+}
+
+input.error {
+    border-color: rgba(255, 0, 0, 0.548);
+}
+
+textarea.error {
+    border-color: rgba(255, 0, 0, 0.548);
+}
+
+/*FOOTER*/
 
 .btn-footer{
     background-color: black;
@@ -63,5 +123,41 @@
 }
 
 footer {
-    background: black;
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#arrowTop {    
+    color: #5e5c5f;
+    position: fixed;
+    bottom: 20%;
+    right: 2%;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    font-size: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#arrowTop:hover {
+    color: rgba(78, 73, 73, 0.699);
+
+    transition: 0.3s;
+}
+
+/* AJUSTAR ARROW TOP PARA MEDIA QUERY */
+
+.fa-github {
+    color: white;
+    font-size: 40px;
+
+}
+
+.fa-linkedin {
+    color: white;
+    font-size: 40px;
 }
