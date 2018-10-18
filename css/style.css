@@ -96,15 +96,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
     filter: grayscale(100%);
 }
 
+.works-subtitle {
+    font-size: 20px;
+}
+
+
 /*FORM*/
 
-.form-group > input{
+.floating-label-form-group {
+    position: relative;
     border-bottom: 1px solid #e9ecef;
 }
 
-span.error {
+li.error {
     color: rgba(255, 0, 0, 0.774);
     font-weight: bold;
+
 }
 
 input.error {
@@ -133,7 +140,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 #arrowTop {    
     color: #5e5c5f;
     position: fixed;
-    bottom: 20%;
+    bottom: 25%;
     right: 2%;
     cursor: pointer;
     background: 0 0;
@@ -157,7 +164,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 
 }
 
+.fa-github:hover{
+    color: grey;
+}
+
 .fa-linkedin {
     color: white;
     font-size: 40px;
+}
+
+.fa-linkedin:hover {
+    color: grey;
+ 
 }

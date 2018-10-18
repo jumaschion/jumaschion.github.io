@@ -1,7 +1,7 @@
 let form = $(".form-contact");
 
 form.validate({
-    errorElement: "span",
+    errorElement: "li",
     rules: {
       name: "required",
       subject: "required",
