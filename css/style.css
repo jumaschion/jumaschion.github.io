@@ -176,12 +176,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 @media (max-width: 480px){
     #arrowTop {
         font-size: 20px;
+        right: 5%;
     }
 }
 
 @media (min-width: 767px) and  (max-width: 979px) {
     #arrowTop {
         font-size: 30px;
+        right: 5%;
     }
 }
 
@@ -190,7 +192,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 .fa-github {
     color: white;
     font-size: 40px;
-
 }
 
 .fa-github:hover{
