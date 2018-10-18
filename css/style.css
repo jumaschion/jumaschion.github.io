@@ -151,7 +151,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 #arrowTop {    
     color: #5e5c5f;
     position: fixed;
-    bottom: 25%;
+    bottom: 40%;
     right: 2%;
     cursor: pointer;
     background: 0 0;
@@ -163,7 +163,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 
 #arrowTop:hover {
     color: rgba(78, 73, 73, 0.699);
-
     transition: 0.3s;
 }
 
@@ -177,6 +176,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
     #arrowTop {
         font-size: 20px;
         right: 5%;
+        top: 10%;
     }
 }
 
@@ -184,6 +184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
     #arrowTop {
         font-size: 30px;
         right: 5%;
+        top: 20%;
     }
 }
 
