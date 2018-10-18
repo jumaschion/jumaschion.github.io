@@ -3,22 +3,24 @@ let form = $(".form-contact");
 form.validate({
     errorElement: "li",
     rules: {
-      name: "required",
-      subject: "required",
       email: {
         required: true,
         email: true
       },
-      message: "required",
+      name: "required",
+      subject: "required",
+      message: "required"
     },
     messages: {
-        name: "Please specify your name",
-        subject: "Please write a subject",
-        email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
-        }
+      email: {
+        required: "We need your email address to contact you / Precisamos do seu e-mail para entrar em contato.",
+        email: "Your email address must be in the format of name@domain.com / Seu e-mail deve ser no formato nome@dominio.com."
+      },
+        name: "Please specify your name / Por favor, digite seu nome.",
+        subject: "Please write a subject / Por favor, escreva o assunto.",
+        message: "Please, write a message / Por favor, escreva uma mensagem."
       }
+
   });
 
   const button = document.getElementById("arrowTop")
