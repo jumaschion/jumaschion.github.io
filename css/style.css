@@ -28,8 +28,8 @@ html {
     width: 50vw;
     }
     .nav {
-        margin-right: 10px;
-        margin-top: 10px;
+        width: 81%;
+        margin: 0;
     }
     .navbar-toggler {
         margin-left: 10px;
