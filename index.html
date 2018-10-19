@@ -5,11 +5,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#686868">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -24,15 +33,15 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="nav">
-                <li class="nav-item active">
+                <li class="title nav-item active">
                     <a class="nav-link" href="#aboutMe">About Me
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="title nav-item">
                     <a class="nav-link" href="#works">Works</a>
                 </li>
-                <li class="nav-item">
+                <li class="title nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -48,14 +57,14 @@
     <div class="container">
         <section class="aboutMe" id="aboutMe">
             <h1 class="title d-flex justify-content-center 20-p">Júlia Maschion</h1>
-            <p class="subtitle justify-content-center"> 
+            <p class="subtitle justify-content-center">
 
-                Olá, tenho 23 anos e encontrei meu amor pela tecnologia e pelo mundo digital. Eu comecei a estudar no Reprograma,
-                um bootcamp de 4 meses, em tempo integral, para máxima aprendizagem. Além de aprender a desenvolver, ganhamos
-                amizades e aprender a trabalhar em equipe. Fico feliz em vê-lo no meu site, curta e veja meu portfólio! ;)</p>
+                Olá, tenho 23 anos e encontrei meu amor pela tecnologia e pelo mundo digital. Eu comecei a estudar no Reprograma, um bootcamp
+                de 4 meses, em tempo integral, para máxima aprendizagem. Além de aprender a desenvolver, ganhamos amizades
+                e aprender a trabalhar em equipe. Fico feliz em vê-lo no meu site, curta e veja meu portfólio! ;)</p>
 
-               <p class="subtitle"> Hello, I'm 23 years and I found my love by technology and digital world. I started to study at Reprograma,
-                a bootcamp of 4 months, full time, for maximum learning. In addition to learning to develop, we gain friendships
+            <p class="subtitle"> Hello, I'm 23 years and I found my love by technology and digital world. I started to study at Reprograma, a
+                bootcamp of 4 months, full time, for maximum learning. In addition to learning to develop, we gain friendships
                 and learn to work as a team. I'm glad to see you on my site, enjoy and see my portfolio! ;)
             </p>
 
@@ -72,10 +81,16 @@
                 <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">JS</div>
             </div>
             <div class="progress m-4">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Jquery</div>
+            </div>
+            <div class="progress m-4">
                 <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">SASS</div>
             </div>
             <div class="progress m-4">
                 <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">GIT</div>
+            </div>
+            <div class="progress m-4">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP</div>
             </div>
         </section>
     </div>
@@ -93,8 +108,10 @@
                 <div class="col-border border-top p-5 col-lg-6">
                     <h3 class="work-app-title text-light"> App To Do List / App Lista de Tarefas </h3>
                     <p class="works-subtitle text-light"> This app was created with HTML, CSS and JavaScript. It was a team work with Natalya Peixoto. You can
-                        see more here, in the link below. Este App foi criado com HTML, CSS e Javascript. Foi um trabalho
-                        em equipe com Natalya Peixoto. Você pode ver mais aqui, no link abaixo:
+                        see more here, in the link below.</p>
+
+                    <p class="works-subtitle text-light">Este App foi criado com HTML, CSS e Javascript. Foi um trabalho em equipe com Natalya Peixoto. Você pode
+                        ver mais aqui, no link abaixo:
                         <a href="https://github.com/jumaschion/projeto-to-do-list" target="_blank">https://github.com/jumaschion/projeto-to-do-list</a>
                     </p>
                 </div>
@@ -109,8 +126,10 @@
                 <div class="col-border border-top p-5 col-lg-6">
                     <h3 class="work-app-title text-light">Website Mundo Gelado</h3>
                     <p class="works-subtitle text-light">The proposal of this work was to do a responsive website, using HTML, CSS and MediaQuery. You can see
-                        more in the link below. O propósito desse trabalho foi fazer um website responsivo, usando HTML,
-                        CSS e MediaQuery. Você pode ver mais no link abaixo:
+                        more in the link below.</p>
+
+                    <p class="works-subtitle text-light">O propósito desse trabalho foi fazer um website responsivo, usando HTML, CSS e MediaQuery. Você pode
+                        ver mais no link abaixo:
                         <a href="https://github.com/jumaschion/responsivo-exercicio" target="_blank">https://github.com/jumaschion/responsivo-exercicio</a>
                     </p>
                 </div>
@@ -125,8 +144,10 @@
                 <div class="col-border border-top p-5 col-lg-6">
                     <h3 class="work-app-title text-light">Project M-de-Maravilhosa / Projeto M-de-Maravilhosa</h3>
                     <p class="works-subtitle text-light">
-                        A website made by the 30 students of the Reprograma bootcamp. Each student brought the contents of a woman who inspired us.
-                        Um website feito pelas 30 alunas do reprograma bootcamp. Cada aluna trouxe o conteudo sobre uma mulher
+                        A website made by the 30 students of the Reprograma bootcamp. Each student brought the contents of a woman who inspired us.</p>
+
+
+                    <p class="works-subtitle text-light"> Um website feito pelas 30 alunas do reprograma bootcamp. Cada aluna trouxe o conteudo sobre uma mulher
                         que nos inspirasse. Link:</p>
                     <a href="https://github.com/jumaschion/projeto-1_m-de-maravilhosa" target="_blank">https://github.com/jumaschion/projeto-1_m-de-maravilhosa</a>
                     <a href="https://github.com/jumaschion/website-mdemaravilhosas" target="_blank">https://github.com/jumaschion/website-mdemaravilhosas</a>
@@ -141,10 +162,10 @@
                 </div>
                 <div class="col-border border-top p-5 col-lg-6">
                     <h3 class="work-app-title text-light">Extra Project Gruppe / Projeto Extra Gruppe </h3>
-                    <p class="works-subtitle text-light"> A website project using HTML e CSS, learned at Reprograma Bootcamp. Um projeto de websitre utilizando
-                        o conteúdo aprendido no Reprograma. Link:
-                        <a href="https://github.com/jumaschion/website-projetoextra"
-                            target="_blank">https://github.com/jumaschion/website-projetoextra</a>
+                    <p class="works-subtitle text-light"> A website project using HTML e CSS, learned at Reprograma Bootcamp. </p>
+
+                    <p class="works-subtitle text-light">Um projeto de websitre utilizando o conteúdo aprendido no Reprograma. Link:
+                        <a href="https://github.com/jumaschion/website-projetoextra" target="_blank">https://github.com/jumaschion/website-projetoextra</a>
                     </p>
                 </div>
             </div>
@@ -156,20 +177,20 @@
             <h2 class="title-contact d-flex justify-content-center text-uppercase p-5">Contact</h2>
             <form class="form-contact">
                 <div class="form-group floating-label-form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="email" name="name" class="form-control border-0 bg-light" id="exampleFormControlInput1" placeholder="Name">
+                    <label for="formControlName">Name</label>
+                    <input type="name" name="name" class="form-control border-0 bg-light" id="formControlName" placeholder="Name">
                 </div>
                 <div class="form-group floating-label-form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" name="email" class="form-control border-0 bg-light" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="formControlEmail">Email address</label>
+                    <input type="email" name="email" class="form-control border-0 bg-light" id="formControlEmail" placeholder="name@example.com">
                 </div>
                 <div class="form-group floating-label-form-group">
-                    <label for="exampleFormControlInput1">Subject</label>
-                    <input type="email" name="subject" class="form-control border-0 bg-light" id="exampleFormControlInput1" placeholder="Subject">
+                    <label for="formControlSubject">Subject</label>
+                    <input type="subject" name="subject" class="form-control border-0 bg-light" id="formControlSubject" placeholder="Subject">
                 </div>
                 <div class="form-group floating-label-form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                    <label for="formControlMessage">Message</label>
+                    <textarea class="form-control" name="message" id="formControlMessage" placeholder="Message" rows="3"></textarea>
                 </div>
                 <button class="btn-footer btn mg-5">Send</button>
             </form>

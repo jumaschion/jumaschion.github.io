@@ -2,7 +2,7 @@
 /*GERAL*/
 
 *{
-    font-family: 'EB Garamond', serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 html {
@@ -71,24 +71,28 @@ html {
 
 /*ABOUT ME*/
 
+.title {
+    font-weight: lighter;
+}
+
 .subtitle {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .quote {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 25px;
+        font-size: 30px;
     }
     .subtitle {
-    font-size: 15px;
+    font-size: 20px;
     }
 
     .quote {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -168,23 +172,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 
 @media (max-width: 320px){
     #arrowTop {
-        font-size: 20px;
+        display: none;
     }
 }
 
 @media (max-width: 480px){
     #arrowTop {
-        font-size: 20px;
-        right: 5%;
-        top: 10%;
+       display: none;
     }
 }
 
 @media (min-width: 767px) and  (max-width: 979px) {
     #arrowTop {
-        font-size: 30px;
-        right: 5%;
-        top: 20%;
+        display: none;
     }
 }
 
